@@ -1,35 +1,44 @@
+import sys
 import os
 import random
 import time
-#from player.human import Human (import from another file)
+from player.human import Human
 
-races = [
-	'Human',
-	'Elf',
-	'Dwarf',
-]
 
-def choose_race():
-	character_choice = input('Choose race\n')
-	cc = character_choice.lower().replace(character_choice[0].lower(), character_choice[0].upper(), 1)
-	#print(cc)
-	if cc in races:
+def character_creation():
+	os.system('cls')
+	### Choosing Race ###
+	for race in races:
+		print(race)
+	choose_race = input('Choose race\n> ')
+	cr = choose_race.lower().replace(choose_race[0].lower(), choose_race[0].upper(), 1)
+
+	### Choosing Class ###
+	for role in roles:
+		print(role)
+	choose_race = input('Choose role\n> ')
+	cr = choose_race.lower().replace(choose_race[0].lower(), choose_race[0].upper(), 1)
+
+	### Choosing Name ###
+	name = input('Choose a name\n> ')
+
+	if cr in races:
 		#string.replace(oldvalue, newvalue, count)
 		#list.index(elmnt)
-		print('You chose {} as your race.'.format(cc))
+		print('You chose {}'.format(cr))
 	else:
-		print('Not a race.\nTry Again.')
+		print('Character creation went wrong\nTry Again\nExiting...')
 		time.sleep(1)
-
+		sys.exit()
 
 def main_menu():
 	os.system('cls')
 	print('Text RPG')
 	print('New Game')
-	menu_choice = input('>>')
+	menu_choice = input('> ')
 
 	if menu_choice == '1':
-		choose_race()
+		character_creation()
 
 
 def main_loop():

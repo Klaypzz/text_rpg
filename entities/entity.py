@@ -11,7 +11,14 @@ class Entity:
         self.race = race
         self.role = role
 
-    # Variables
-    race_stats = [
-
+    ### Global Variables ###
+    races = [
+        'Human',
+        'Elf',
+        'Dwarf',
+    ]
+    roles =  [
+        'Knight',
+        'Mage',
+        'Archer'
     ]
