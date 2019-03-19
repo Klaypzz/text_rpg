@@ -1,0 +1,40 @@
+RPG Game
+
+World:
+    Different Floors with increased difficulty
+    Different biomes
+    Safe zones with shops, blacksmiths etc
+
+NPC:
+    Should be in a safe zone
+    Can interact with them
+
+Mobs:
+    Different mobs depending on which floor you are on
+    Different XP gain and what loot drops depending on what type of mob
+
+Player:
+    Can choose what race they play and what class they want to play
+    Skills and skilltree, you can level up your skills by using them
+    Special skills that only unlocks when specific requirements are met
+
+Items:
+    Armor:
+        Different type of armors, like light and heavy armor, bonus stats
+    Tools:
+        Axes, Pickaxes, Fishing rods
+    Weapons:
+        Swords, Spears, Wands, Staffs, Bows, Crossbows, Gloves
+    
+        Can also have magical atributes when enchanted
+        Level requirement
+        Different rarities
+
+    Crafting Materials:
+        Comes from mobdrops or crafted or bought
+
+    Consumables:
+        Potions & Food:
+            Healing, Mana, Buffs stats, Remove debuffs
+
+
